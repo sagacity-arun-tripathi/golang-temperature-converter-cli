@@ -28,7 +28,7 @@ func main() {
 			fmt.Println("Good bye!")
 			break
 		}
-		if len(os.Args) > 2 {
+		if len(os.Args) != 2 {
 			printError(errInvalidArguments)
 		}
 		originUnit = strings.ToUpper(os.Args[1])
